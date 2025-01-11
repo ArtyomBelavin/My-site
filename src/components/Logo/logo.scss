@@ -1,0 +1,7 @@
+.logo__svg path {
+  transition: stroke 0.3s ease-in-out; /* Плавный переход */
+}
+
+.logo__svg:hover path {
+  stroke: #7127ba; /* Новый цвет при наведении */
+}

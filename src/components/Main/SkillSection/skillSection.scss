@@ -1,0 +1,82 @@
+@font-face {
+  font-family: "Sofia Sans";
+  src: url("../../../Fonts/SofiaSans-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+.skill-section {
+  margin-bottom: 200px;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+
+  &__text {
+    font-family: "Sofia Sans";
+    max-width: 562px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  &__title {
+    font-size: 24px;
+    line-height: 31px;
+    letter-spacing: 0.2px;
+    color: #fff;
+
+    span {
+      color: #a362ff;
+    }
+  }
+}
+
+.skills--img {
+  animation: shadowFilter 8s ease-in-out infinite; /* Добавили ease-in-out */
+}
+
+@keyframes shadowFilter {
+  0% {
+    filter: drop-shadow(2px 1px 6px tranparent);
+  }
+
+  12.5% {
+    filter: drop-shadow(2px 1px 6px #4cd8ff);
+  }
+
+  25% {
+    filter: drop-shadow(2px 1px 6px #9f7aff);
+  }
+
+  37.5% {
+    filter: drop-shadow(2px 1px 6px #ff8bca);
+  }
+
+  50% {
+    filter: drop-shadow(2px 1px 6px #84ff9f);
+  }
+
+  62.5% {
+    filter: drop-shadow(2px 1px 6px #ff8bca);
+  }
+
+  75% {
+    filter: drop-shadow(2px 1px 6px #9f7aff);
+  }
+
+  87.5% {
+    filter: drop-shadow(2px 1px 6px #4cd8ff);
+  }
+
+  100% {
+    filter: drop-shadow(2px 1px 6px tranparent);
+  }
+}

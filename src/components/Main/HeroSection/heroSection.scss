@@ -1,0 +1,111 @@
+@font-face {
+  font-family: "Sofia Sans";
+  src: url("../../../Fonts/SofiaSans-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+.hero {
+  margin-bottom: 200px;
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 231px;
+  }
+  &__me {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+  &__title {
+    font-size: 50px;
+    color: #fff;
+    font-weight: 400;
+  }
+  &__bg__images {
+    position: absolute;
+    width: 385px;
+    height: 431px;
+    background-image: url("../../../assets/images/bg.png");
+    background-repeat: no-repeat;
+    z-index: -1;
+    top: -100px;
+    left: -125px;
+  }
+
+  &__name {
+    position: absolute;
+    display: flex;
+    align-items: end;
+    gap: 8px;
+    top: -100px;
+    left: 150px;
+  }
+
+  &__name__title {
+    font-size: 19px;
+    line-height: 97px;
+    color: #fff;
+
+    span {
+      color: #7127ba;
+    }
+  }
+
+  &__info__title {
+    font-family: "Sofia Sans";
+    font-size: 22px;
+    letter-spacing: 0.2px;
+    color: #fff;
+  }
+}
+
+@media (max-width: 730px) {
+  .hero {
+    &__title {
+      font-size: 28px;
+    }
+    &__name__title {
+      font-size: 16px;
+    }
+    &__info__title {
+      text-align: center;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media (max-width: 493px) {
+  .hero {
+    &__name__title {
+      font-size: 14px;
+    }
+    &__name {
+      left: 50px;
+      top: -120px;
+    }
+  }
+}
+
+@media (max-width: 366px) {
+  .hero {
+    &__me {
+      flex-direction: column;
+      gap: 40px;
+    }
+
+    &__name--img {
+      display: none;
+    }
+    &__bg__images {
+      left: -55px;
+      width: 345px;
+      height: 381px;
+      background-position: center;
+    }
+  }
+}

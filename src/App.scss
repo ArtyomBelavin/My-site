@@ -1,0 +1,35 @@
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: "Preahvihear";
+  src: url("./Fonts/Preahvihear-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  background-color: #11071f;
+  font-family: "Preahvihear";
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  max-width: 1266px;
+  margin: 0 auto;
+  padding: 0 20px;
+}

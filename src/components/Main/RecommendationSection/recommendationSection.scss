@@ -1,0 +1,185 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("../../../Fonts/Poppins-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../../../Fonts/Poppins-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+.recommendation-section {
+  margin-bottom: 200px;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 230px;
+  }
+}
+
+.recommendation-section__healas {
+  display: flex;
+  position: relative;
+}
+
+.healas__text {
+  font-family: "Poppins";
+  display: flex;
+  flex-direction: column;
+}
+
+.recommendation__title {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  color: #9857d3;
+  margin-bottom: 10px;
+}
+
+.healas__title,
+.todo__title {
+  font-size: 34px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  color: #ccd6f6;
+  margin-bottom: 30px;
+  transition: color 0.3s ease-in-out;
+
+  &:hover {
+    color: #9857d3;
+  }
+}
+
+.healas__description,
+.todo__description {
+  padding: 15px;
+  max-width: 669px;
+  min-height: 165px;
+  color: #ccd6f6;
+  font-size: 18px;
+}
+
+.healas__description__wrapper {
+  background-image: url("../../../assets/images/healas-1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+}
+
+.healas__images__main--img {
+  z-index: -1;
+  position: absolute;
+  top: 50px;
+  right: 10px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 537px;
+    height: 307px;
+    background-color: #2b0b3a;
+    z-index: -2;
+    top: -20px;
+    right: 20px;
+    border-radius: 10px;
+  }
+}
+
+.healas__bg {
+  position: absolute;
+  top: -170px;
+  left: 410px;
+  z-index: -3;
+}
+
+.todo__text {
+  font-family: "Poppins";
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.recommendation-section__todo {
+  display: flex;
+  position: relative;
+  justify-content: end;
+}
+
+.todo__description__wrapper {
+  background-image: url("../../../assets/images/todo-3.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+}
+
+.todo__bg {
+  position: absolute;
+  top: -150px;
+  left: -250px;
+  z-index: -3;
+}
+
+.todo__images__main--img {
+  z-index: -1;
+  position: absolute;
+  top: 50px;
+  left: 0px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 537px;
+    height: 307px;
+    background-color: #2b0b3a;
+    z-index: -2;
+    top: -20px;
+    right: -30px;
+    border-radius: 10px;
+  }
+}
+
+@media (max-width: 1336px) {
+  .healas__bg,
+  .todo__bg {
+    display: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  .recommendation-section__inner {
+    gap: 0;
+  }
+
+  .recommendation-section__healas {
+    margin-bottom: 100px;
+  }
+  .recommendation-section__healas,
+  .recommendation-section__todo {
+    flex-direction: column;
+  }
+
+  .healas__images__main--img,
+  .todo__images__main--img {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: relative;
+    }
+  }
+
+  .todo__text {
+    align-items: flex-start;
+  }
+  .healas__description,
+  .todo__description {
+    max-width: fit-content;
+  }
+}
